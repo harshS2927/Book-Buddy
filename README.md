@@ -47,52 +47,6 @@ Book Buddy is an AI-powered chatbot built using **IBM Watson Assistant**. It hel
 
 ---
 
-## 🛠️ Setup Instructions
-
-### 1. Create Watson Assistant Service
-
-- Go to [IBM Cloud](https://cloud.ibm.com) and log in.
-- Create a **Watson Assistant** instance.
-
-### 2. Import the Book Buddy Skill
-
-- Open the Watson Assistant dashboard.
-- Go to **Skills > Create Skill > Import skill**.
-- Upload `book_buddy_skill.json`.
-
-### 3. Create an Assistant
-
-- Go to the **Assistants** tab.
-- Create a new assistant and add the imported skill.
-
-### 4. Integrate Web Chat
-
-- Open your assistant, click **Integrations > Web Chat**.
-- Enable the integration and copy the provided JavaScript snippet.
-
-### 5. Embed in a Web Page
-
-- Open `index.html`.
-- Paste the integration script into the `<body>` section.
-- Save and open the file in your browser to test the chatbot.
-
----
-
-## 📸 Screenshots
-
-> *(Replace the image URLs or embed actual images after uploading them to GitHub's `assets/` folder or an external host)*
-
-### 📌 Watson Assistant Skill Interface  
-![Skill Interface](screenshots/skill-interface.png)
-
-### 📌 Web Chat Integration Panel  
-![Web Chat Integration](screenshots/integration-panel.png)
-
-### 📌 Chatbot in Action on Web Page  
-![Chatbot Live](screenshots/bookbuddy-chat.png)
-
----
-
 ## 🎨 Customization Tips
 
 - Add more genres and book data to improve recommendations.
@@ -103,10 +57,9 @@ Book Buddy is an AI-powered chatbot built using **IBM Watson Assistant**. It hel
 
 ## 📬 Contact
 
-**Created by:** [Your Name]  
-**Email:** [your-email@example.com]  
-**GitHub:** [https://github.com/yourusername](https://github.com/yourusername)
-
+**Created by:** Harsh Raj 
+**Email:** [harshraj2927@gmail.com]  
+**GitHub:** harshs2927
 ---
 
 ## 📄 License
