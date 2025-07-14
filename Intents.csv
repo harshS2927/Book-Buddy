@@ -1,0 +1,55 @@
+Who is the author of this book?,author_search
+Author name,author_search
+give me a book with author name,author_search
+What’s the background of George R.R. Martin?,author_search
+Is The Midnight Library available?,book_availability
+Is there an eBook version of 1984?,book_availability
+Is that book in stock?,book_availability
+Can I borrow The Silent Patient from the library?,book_availability
+Fiction Imaginative stories not based on real events.,genre
+what genre you have,genre
+Horror Chilling stories meant to scare or disturb.,genre
+Romance Love stories and emotional connections.,genre
+Biography Life story of a real person.,genre
+what all genre you have,genre
+Mystery Stories centered on solving a puzzle or crime.,genre
+"Gotta run, see ya!",goodbye
+Catch you later.,goodbye
+ok then see you later,goodbye
+Bye!,goodbye
+See you later.,goodbye
+"Thanks, talk later!",goodbye
+"Yo, what’s up?",greeting
+namaste!,greeting
+good to see you,greeting
+hey,greeting
+hello,greeting
+hi,greeting
+Suggest a short book I can finish on a flight.,recommend_book
+Can you suggest a good book to read?,recommend_book
+I'm looking for something interesting to dive into.,recommend_book
+I want a thrilling mystery to get lost in.,recommend_book
+Got any spine-chilling horror books?,recommend_book
+I'm in my 20s and love coming-of-age stories.,recommend_book
+"I just finished college, what's a good next read?",recommend_book
+Got anything newer or more popular?,recommend_book
+recommend me a book to read,recommend_book
+Recommend me something to read,recommend_book
+Can you suggest a book for me?,suggest_book
+suggest historical fiction!,suggest_book
+suggest self help!,suggest_book
+suggest mystery!,suggest_book
+suggest biography!,suggest_book
+suggest romance!,suggest_book
+suggest horror!,suggest_book
+can you suggest a book for me according to my mood,suggest_book
+I want something light and funny to read.,suggest_book
+What book should I read next?,suggest_book
+Suggest me something interesting,suggest_book
+Pride And Prejudice,top_books
+To Kill a Mockingbird,top_books
+Harry Potter Series,top_books
+A Song Of Ice And Fire,top_books
+The Winds Of Winter,top_books
+A Feast Of Crows,top_books
+The Great Gatsby,top_books
