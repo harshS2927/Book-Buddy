@@ -1,0 +1,857 @@
+{
+  "intents": [
+    {
+      "intent": "author_search",
+      "examples": [
+        {
+          "text": "Author name"
+        },
+        {
+          "text": "give me a book with author name"
+        },
+        {
+          "text": "What’s the background of George R.R. Martin?"
+        },
+        {
+          "text": "Who is the author of this book?"
+        }
+      ],
+      "description": "Provides information about a specific author, such as their biography, popular works, or writing style."
+    },
+    {
+      "intent": "book_availability",
+      "examples": [
+        {
+          "text": "Can I borrow The Silent Patient from the library?"
+        },
+        {
+          "text": "Is that book in stock?"
+        },
+        {
+          "text": "Is The Midnight Library available?"
+        },
+        {
+          "text": "Is there an eBook version of 1984?"
+        }
+      ],
+      "description": "User asks where to find/buy/borrow the book"
+    },
+    {
+      "intent": "genre",
+      "examples": [
+        {
+          "text": "Biography Life story of a real person."
+        },
+        {
+          "text": "Fiction Imaginative stories not based on real events."
+        },
+        {
+          "text": "Horror Chilling stories meant to scare or disturb."
+        },
+        {
+          "text": "Mystery Stories centered on solving a puzzle or crime."
+        },
+        {
+          "text": "Romance Love stories and emotional connections."
+        },
+        {
+          "text": "what all genre you have"
+        },
+        {
+          "text": "what genre you have"
+        }
+      ],
+      "description": "ideal for dropdowns, filters, or quick replies in your book recommendation."
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "Bye!"
+        },
+        {
+          "text": "Catch you later."
+        },
+        {
+          "text": "Gotta run, see ya!"
+        },
+        {
+          "text": "ok then see you later"
+        },
+        {
+          "text": "See you later."
+        },
+        {
+          "text": "Thanks, talk later!"
+        }
+      ],
+      "description": "Handles user expressions of ending the conversation or saying goodbye."
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "good to see you"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "namaste!"
+        },
+        {
+          "text": "Yo, what’s up?"
+        }
+      ],
+      "description": "Recognizes when the user initiates a conversation with a greeting or salutation."
+    },
+    {
+      "intent": "recommend_book",
+      "examples": [
+        {
+          "text": "Can you suggest a good book to read?"
+        },
+        {
+          "text": "Got any spine-chilling horror books?"
+        },
+        {
+          "text": "Got anything newer or more popular?"
+        },
+        {
+          "text": "I just finished college, what's a good next read?"
+        },
+        {
+          "text": "I'm in my 20s and love coming-of-age stories."
+        },
+        {
+          "text": "I'm looking for something interesting to dive into."
+        },
+        {
+          "text": "I want a thrilling mystery to get lost in."
+        },
+        {
+          "text": "recommend me a book to read"
+        },
+        {
+          "text": "Recommend me something to read"
+        },
+        {
+          "text": "Suggest a short book I can finish on a flight."
+        }
+      ],
+      "description": "Suggests a book based on user preferences or genre."
+    },
+    {
+      "intent": "suggest_book",
+      "examples": [
+        {
+          "text": "Can you suggest a book for me?"
+        },
+        {
+          "text": "can you suggest a book for me according to my mood"
+        },
+        {
+          "text": "I want something light and funny to read."
+        },
+        {
+          "text": "suggest biography!"
+        },
+        {
+          "text": "suggest historical fiction!"
+        },
+        {
+          "text": "suggest horror!"
+        },
+        {
+          "text": "Suggest me something interesting"
+        },
+        {
+          "text": "suggest mystery!"
+        },
+        {
+          "text": "suggest romance!"
+        },
+        {
+          "text": "suggest self help!"
+        },
+        {
+          "text": "What book should I read next?"
+        }
+      ],
+      "description": "Recommends a book to the user based on their preferences, mood, genre, or reading history."
+    },
+    {
+      "intent": "top_books",
+      "examples": [
+        {
+          "text": "A Feast Of Crows"
+        },
+        {
+          "text": "A Song Of Ice And Fire"
+        },
+        {
+          "text": "Harry Potter Series"
+        },
+        {
+          "text": "Pride And Prejudice"
+        },
+        {
+          "text": "The Great Gatsby"
+        },
+        {
+          "text": "The Winds Of Winter"
+        },
+        {
+          "text": "To Kill a Mockingbird"
+        }
+      ],
+      "description": "Provides a list of popular, trending, or highly rated books."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "age_group",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "adult",
+          "synonyms": [
+            "Ages 25+; complex themes, relationships, general fiction."
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "all_ages",
+          "synonyms": [
+            "books for all age persons"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "children",
+          "synonyms": [
+            "Books for ages 0–8; picture books, early readers."
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "new_adult",
+          "synonyms": [
+            "Ages 18–25; college life, early adulthood, mature YA"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "author",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Agatha Christie",
+          "synonyms": [
+            "Murder on the Orient Express"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chetan Bhagat",
+          "synonyms": [
+            "2 States, The Girl in Room 105"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Colleen Hoover",
+          "synonyms": [
+            "It Ends With Us, Verity"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "George R.R. Martin",
+          "synonyms": [
+            "A Song of Ice and Fire"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "J.K. Rowling",
+          "synonyms": [
+            "Harry Potter series"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paulo Coelho",
+          "synonyms": [
+            "The Alchemist"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Stephen King",
+          "synonyms": [
+            "The Shining, It, Misery"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "genre",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Adult Fiction",
+          "synonyms": [
+            "Contemporary Fiction"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "age based",
+          "synonyms": [
+            "Reader Age Group"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "biography",
+          "synonyms": [
+            "Life Story"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fiction",
+          "synonyms": [
+            "Narrative Literature"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "horror",
+          "synonyms": [
+            "Dark Fiction"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "psychology",
+          "synonyms": [
+            "Cognitive Science"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thriller",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "language",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "all_languages",
+          "synonyms": [
+            "No language preference / all available options"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "english",
+          "synonyms": [
+            "Books written or translated into English"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "french",
+          "synonyms": [
+            "French language books"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "german",
+          "synonyms": [
+            "German language books"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hindi",
+          "synonyms": [
+            "Hindi language books"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "italian",
+          "synonyms": [
+            "Italian language books"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "japanese",
+          "synonyms": [
+            "Japanese books or translations"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "korean",
+          "synonyms": [
+            "Korean books or webtoons"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "spanish",
+          "synonyms": [
+            "Spanish language books"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mood",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "dark",
+          "synonyms": [
+            "Grim, intense, or unsettling themes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "emotional",
+          "synonyms": [
+            "Deep, moving, or tear-jerking reads"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "intense",
+          "synonyms": [
+            "Emotionally or psychologically gripping"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "romantic",
+          "synonyms": [
+            "Love-focused and heartwarming mood"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "uplifting",
+          "synonyms": [
+            "Feel-good, positive, and inspiring stories"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "rating",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "4_star_and_up",
+          "synonyms": [
+            "Books with 4.0+ average rating (most commonly used)."
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5_star",
+          "synonyms": [
+            "Only the highest-rated books (5 out of 5)."
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "low_rated",
+          "synonyms": [
+            "Books rated below 3 stars"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "popular",
+          "synonyms": [
+            "Frequently read, reviewed, or trending books"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "top_rated",
+          "synonyms": [
+            "Critically or user-acclaimed titles"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "underrated",
+          "synonyms": [
+            "Hidden gems or lesser-known books with strong reviews"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1752430721432",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "suggest romance!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Looking for a story that pulls at your heartstrings? 💕  \nHere are some popular romance novels you might enjoy:\n\n1. *It Ends With Us* by Colleen Hoover  \n💔 A deeply emotional story about love, resilience, and difficult choices.\n\n2. *The Love Hypothesis* by Ali Hazelwood  \n🔬 A sweet and nerdy romance between a grad student and a brooding professor with fake-dating sparks.\n\n3. *The Fault in Our Stars* by John Green  \n🌌 A beautiful, tear-jerking love story between two teens who meet at a cancer support group.\n\n4. *People We Meet on Vacation* by Emily Henry  \n✈️ A feel-good friends-to-lovers story filled with travel, laughter, and second chances.\n\n5. *P.S. I Love You* by Cecelia Ahern  \n💌 A heartbreaking yet hopeful story of a woman healing after loss, guided by letters from her late husband.\n\nWould you like something lighthearted, emotional, or with a twist of comedy next?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1752430531387",
+      "dialog_node": "node_1_1752431409198",
+      "previous_sibling": "node_8_1752431147106"
+    },
+    {
+      "type": "standard",
+      "title": "book recommendations",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are a few books you might enjoy:\n1.   Harry Potter series\n2.   A Song of Ice and Fire\n3.  It Ends With Us, Verity\n4   The Shining, It, Misery\n5.  The Alchemist\n6.  Murder on the Orient Express"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "#recommend_book",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1752425641093",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "books by author!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are some popular books by Colleen Hoover:\n\n1. *It Ends With Us* – A powerful romance exploring love and strength in the face of abuse.\n2. *Verity* – A chilling psychological thriller full of twists and secrets.\n3. *Ugly Love* – A raw and emotional story about heartbreak and healing.\n4. *Reminders of Him* – A heartfelt novel about redemption, motherhood, and second chances.\n5. *November 9* – A unique love story built around fate and timing.\n\nWould you like me to recommend one of these, or show you books by a different author?\n"
+              },
+              {
+                "text": "Stephen King is known for masterful horror and suspense. Here are some of his top books:\n\n1. *The Shining* – A haunted hotel. A psychic child. A descent into madness.\n2. *It* – A terrifying tale of a shapeshifting clown preying on fear.\n3. *Carrie* – A bullied teen discovers she has telekinetic powers.\n4. *Misery* – A suspenseful story of an obsessed fan and a trapped author.\n5. *Doctor Sleep* – The chilling sequel to *The Shining*.\n\nWould you like a horror or suspense recommendation?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Here are some inspiring books by Paulo Coelho:\n\n1. *The Alchemist* – A journey of self-discovery and following your dreams.\n2. *Brida* – A young woman explores love and spirituality.\n3. *The Valkyries* – A mystical journey through the Mojave Desert.\n4. *Eleven Minutes* – A bold novel about love and sexuality.\n5. *The Devil and Miss Prym* – A moral tale about temptation and choice.\n\nDo you enjoy spiritual or philosophical fiction like this?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#author_search",
+      "dialog_node": "node_5_1752430125322",
+      "previous_sibling": "node_3_1752425641093"
+    },
+    {
+      "type": "standard",
+      "title": "suggest biography!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Looking to learn from real lives and extraordinary journeys? Here are some inspiring biographies to explore: 📖\n\n1. *Steve Jobs* by Walter Isaacson  \n💡 A gripping account of the visionary Apple co-founder — his genius, flaws, and impact on the tech world.\n\n2. *Becoming* by Michelle Obama  \n🌟 A powerful and personal memoir from the former First Lady, sharing her journey from Chicago to the White House.\n\n3. *Elon Musk* by Walter Isaacson  \n🚀 The story of a bold entrepreneur pushing the limits with Tesla, SpaceX, and beyond — filled with innovation and controversy.\n\n4. *Wings of Fire* by A.P.J. Abdul Kalam  \n🇮🇳 The inspiring autobiography of India’s “Missile Man” and former President, from humble beginnings to global recognition.\n\n5. *Long Walk to Freedom* by Nelson Mandela  \n🕊️ A moving and historic memoir chronicling Mandela’s fight against apartheid and his path to becoming South Africa’s leader.\n\nWould you like biographies of leaders, entrepreneurs, scientists, or creatives?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1752430531387",
+      "dialog_node": "node_5_1752432141248",
+      "previous_sibling": "node_6_1752431871232"
+    },
+    {
+      "type": "standard",
+      "title": "suggest mystery!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ready to solve a puzzle? 🔍  \nHere are some top mystery novels that will keep you guessing till the last page:\n\n1. *The Girl with the Dragon Tattoo* by Stieg Larsson  \n💻 A gripping investigation into a decades-old disappearance, full of dark family secrets and cyber-sleuthing.\n\n2. *Gone Girl* by Gillian Flynn  \n🧠 A twisted psychological thriller about a missing wife and a husband with too many secrets.\n\n3. *The Da Vinci Code* by Dan Brown  \n🕯️ A fast-paced mystery involving secret societies, ancient symbols, and a thrilling race across Europe.\n\n4. *The Silent Patient* by Alex Michaelides  \n🎨 A woman shoots her husband and never speaks again — the mystery unravels through a psychotherapist's obsession.\n\n5. *Big Little Lies* by Liane Moriarty  \n📚 A story of three women entangled in secrets, lies, and a shocking murder at a school trivia night.\n\nWould you like more mystery recommendations — perhaps cozy, historical, or psychological?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1752430531387",
+      "dialog_node": "node_6_1752431648548",
+      "previous_sibling": "node_1_1752431409198"
+    },
+    {
+      "type": "standard",
+      "title": "suggest historical fiction!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Step into the past with these captivating historical fiction reads: 🕰️\n\n1. *The Book Thief* by Markus Zusak  \n📚 Set in Nazi Germany, this emotional story follows a young girl who finds solace in books amidst the horrors of war — narrated by Death itself.\n\n2. *The Nightingale* by Kristin Hannah  \n🕊️ A powerful tale of two sisters surviving the Nazi occupation of France, full of resilience, sacrifice, and heroism.\n\n3. *All the Light We Cannot See* by Anthony Doerr  \n💡 A beautifully written novel about a blind French girl and a German boy whose paths collide during WWII.\n\n4. *Beneath a Scarlet Sky* by Mark Sullivan  \n🎖️ Based on a true story of a young Italian who becomes a spy for the Allies during World War II.\n\n5. *The Tattooist of Auschwitz* by Heather Morris  \n✍️ A heartbreaking true story of survival and love inside the horrors of a concentration camp.\n\nWould you like something set in another time period — like ancient history, the Victorian era, or the 20th century?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1752430531387",
+      "dialog_node": "node_6_1752431871232",
+      "previous_sibling": "node_9_1752431762193"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "See you soon! Hope you find the perfect book.  \nDon't forget — the next great read is just a message away! 😊"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#goodbye",
+      "dialog_node": "node_7_1752430721432",
+      "previous_sibling": "node_8_1752430531387"
+    },
+    {
+      "type": "standard",
+      "title": "greeting node",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there! 📚 Ready to discover your next great read?"
+              },
+              {
+                "text": "Hello! I can help you find books by genre, mood, author, or age group. What are you in the mood for today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1751953230260"
+    },
+    {
+      "type": "standard",
+      "title": "book suggestion",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sure! I'd love to help you find your next great read. 📚\n\nTo make a better suggestion, can you tell me any of the following:\n- A genre you enjoy (e.g., Thriller, Romance, Sci-Fi)\n- A mood you're in (e.g., feel-good, emotional, dark)\n- An author you like\n- Your age group or preferred language"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#suggest_book",
+      "dialog_node": "node_8_1752430531387",
+      "previous_sibling": "node_5_1752430125322"
+    },
+    {
+      "type": "standard",
+      "title": "suggest horror!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Love a good scare? 😱 Here are some gripping horror books you might enjoy:\n\n1. *The Shining* by Stephen King  \n🪓 A haunted hotel, a psychic child, and a father's descent into madness — a true horror classic.\n\n2. *Mexican Gothic* by Silvia Moreno-Garcia  \n🕯️ A chilling and atmospheric tale set in a decaying mansion with dark family secrets.\n\n3. *The Silent Patient* by Alex Michaelides  \n🧠 A psychological thriller about a woman who stops speaking after a violent crime — and the therapist determined to uncover why.\n\n4. *The Haunting of Hill House* by Shirley Jackson  \n🏚️ A creepy, gothic novel about a group of people drawn to an ominous mansion with a dark past.\n\n5. *Bird Box* by Josh Malerman  \n🎭 A terrifying post-apocalyptic story where sight can kill, and survival depends on blindfolds.\n\nWould you like more horror suggestions or something even darker?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1752430531387",
+      "dialog_node": "node_8_1752431147106"
+    },
+    {
+      "type": "standard",
+      "title": "suggest self help!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Looking for a little inspiration or personal growth? 🌟  \nHere are some top self-help books that have empowered millions:\n\n1. *Atomic Habits* by James Clear  \n🔁 A practical guide to building good habits, breaking bad ones, and mastering the tiny changes that lead to big results.\n\n2. *The Power of Now* by Eckhart Tolle  \n🧘 A transformative spiritual guide to living in the present moment and letting go of unnecessary suffering.\n\n3. *Think Like a Monk* by Jay Shetty  \n🧠 Insights from monk life to help you find peace, purpose, and clarity in the modern world.\n\n4. *You Are a Badass* by Jen Sincero  \n💥 A bold and humorous take on building self-confidence and creating a life you love.\n\n5. *The 7 Habits of Highly Effective People* by Stephen R. Covey  \n🗂️ Timeless principles for personal and professional success, decision-making, and productivity.\n\nWould you like suggestions focused on mindset, productivity, relationships, or something more spiritual?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1752430531387",
+      "dialog_node": "node_9_1752431762193",
+      "previous_sibling": "node_6_1752431648548"
+    },
+    {
+      "type": "standard",
+      "title": "genre",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hii Looking for a good read ? Tell me your genre!\n"
+              },
+              {
+                "text": "Here are a few genres to explore:\n*Fiction\n* Non-Fiction\n* Thriller\n* Romance \n* Fantasy\n*  Horror \n*  Mystery \n*  Biography \n\nJust tell me your preferred genre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#genre",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_8_1751953230260"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "Discover your next favorite book with smart, personalized recommendations for every reader.",
+  "name": "Book Buddy-dialog"
+}
