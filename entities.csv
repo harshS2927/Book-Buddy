@@ -1,0 +1,38 @@
+age_group,new_adult,"Ages 18–25; college life, early adulthood, mature YA"
+age_group,children,"Books for ages 0–8; picture books, early readers."
+age_group,all_ages,books for all age persons
+age_group,adult,"Ages 25+; complex themes, relationships, general fiction."
+author,Paulo Coelho,The Alchemist
+author,Stephen King,"The Shining, It, Misery"
+author,Agatha Christie,Murder on the Orient Express
+author,Chetan Bhagat,"2 States, The Girl in Room 105"
+author,Colleen Hoover,"It Ends With Us, Verity"
+author,George R.R. Martin,A Song of Ice and Fire
+author,J.K. Rowling,Harry Potter series
+genre,psychology,Cognitive Science
+genre,Thriller
+genre,Adult Fiction,Contemporary Fiction
+genre,age based,Reader Age Group
+genre,biography,Life Story
+genre,fiction,Narrative Literature
+genre,horror,Dark Fiction
+language,italian,Italian language books
+language,japanese,Japanese books or translations
+language,korean,Korean books or webtoons
+language,spanish,Spanish language books
+language,all_languages,No language preference / all available options
+language,english,Books written or translated into English
+language,french,French language books
+language,german,German language books
+language,hindi,Hindi language books
+mood,dark,"Grim, intense, or unsettling themes"
+mood,uplifting,"Feel-good, positive, and inspiring stories"
+mood,romantic,Love-focused and heartwarming mood
+mood,intense,Emotionally or psychologically gripping
+mood,emotional,"Deep, moving, or tear-jerking reads"
+rating,underrated,Hidden gems or lesser-known books with strong reviews
+rating,5_star,Only the highest-rated books (5 out of 5).
+rating,low_rated,Books rated below 3 stars
+rating,popular,"Frequently read, reviewed, or trending books"
+rating,top_rated,Critically or user-acclaimed titles
+rating,4_star_and_up,Books with 4.0+ average rating (most commonly used).
