@@ -55,6 +55,21 @@ Book Buddy is an AI-powered chatbot built using **IBM Watson Assistant**. It hel
 
 ---
 
+## 📸 Screenshots
+
+> *(Replace the image URLs or embed actual images after uploading them to GitHub's `assets/` folder or an external host)*
+
+### 📌 Watson Assistant Skill Interface  
+![Skill Interface](Screenshots/Chatbot.png)
+
+### 📌 Web Chat Integration Panel  
+![Web Chat Integration](screenshots/integration-panel.png)
+
+### 📌 Chatbot in Action on Web Page  
+![Chatbot Live](screenshots/bookbuddy-chat.png)
+
+---
+
 ## 📬 Contact
 
 **Created by:** Harsh Raj 
